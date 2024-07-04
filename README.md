@@ -1,113 +1,110 @@
 
-# CryptoTracker
+# CryptoPlace Web App
 
-CryptoTracker is a web application built with ReactJS and Vite, leveraging the CoinGecko API to provide real-time cryptocurrency data. Users can view the top 10 cryptocurrencies, their current prices, 24-hour changes, and market caps. Additionally, the app offers detailed information, currency conversion, and a responsive design.
+CryptoPlace is a React web application built with Vite that allows users to explore and track cryptocurrencies. It provides real-time prices, market data, detailed cryptocurrency information, and more.
 
 ## Features
 
-- View the top 10 cryptocurrencies
-- Current prices and 24-hour change
-- Market cap information
-- Search all cryptocurrencies
-- Real-time price updates
-- Detailed cryptocurrency page with graph and information
-- Currency conversion
-- Responsive design
-
-## Technologies Used
-
-- ReactJS
-- Vite
-- CoinGecko API
-- react-dom
-- react-router-dom
-- react-google-chart
-- CSS
-
-## Installation
-
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/cryptotracker.git
-    ```
-
-2. Navigate to the project directory:
-    ```bash
-    cd cryptotracker
-    ```
-
-3. Install dependencies:
-    ```bash
-    npm install
-    ```
-
-4. Start the development server:
-    ```bash
-    npm run dev
-    ```
-
-5. Open your browser and go to `http://localhost:3000`
-
-## Usage
-
-1. **Home Page**: View the top 10 cryptocurrencies with their current price, 24-hour change, and market cap.
-2. **Search**: Use the search functionality to find any cryptocurrency and get real-time prices.
-3. **Detailed Information**: Click on any cryptocurrency to view detailed information, including a price graph.
-4. **Currency Conversion**: Convert between different currencies within the app.
-5. **Responsive Design**: The app is fully responsive and can be used on any device.
+- **Top 10 Cryptocurrencies**: View the top 10 cryptocurrencies, their current price, 24-hour change, and market cap.
+- **Search Functionality**: Search for any cryptocurrency and get real-time price updates.
+- **Detailed Cryptocurrency Page**: Access detailed information for each cryptocurrency, including a price chart and other relevant data.
+- **Currency Conversion**: Convert prices between different currencies.
+- **Responsive Design**: The app is fully responsive and works on all device sizes.
 
 ## Project Structure
 
-```plaintext
-.
-├── public
-│   ├── vite.svg
-│   └── ...
-├── src
-│   ├── components
-│   │   ├── Footer.jsx
-│   │   ├── LineChart.jsx
-│   │   ├── Navbar.jsx
-│   │   └── ...
-│   ├── pages
-│   │   ├── HomePage.jsx
-│   │   ├── CryptoPage.jsx
-│   │   └── ...
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── ...
-├── .gitignore
-├── package.json
-├── vite.config.js
-└── README.md
 ```
+public
+  └── vite.svg
+src
+  ├── assets
+  ├── components
+  │   ├── Footer
+  │   │   ├── Footer.jsx
+  │   │   └── Footer.css
+  │   ├── LineChart
+  │   │   └── LineChart.jsx
+  │   ├── Navbar
+  │       ├── Navbar.jsx
+  │       └── Navbar.css
+  ├── context
+  │   └── CoinContext.jsx
+  ├── Pages
+  │   ├── Coin
+  │   │   ├── Coin.jsx
+  │   │   └── Coin.css
+  │   └── Home
+  │       ├── Home.jsx
+  │       └── Home.css
+  ├── app.jsx
+  ├── index.css
+  ├── main.jsx
+.eslintrc.cjs
+.gitignore
+index.html
+package-lock.json
+package.json
+readme.md
+vite.config.js
+```
+
+## Getting Started
+
+To get a local copy up and running, follow these steps:
+
+### Prerequisites
+
+- Node.js
+- npm (Node Package Manager)
+
+### Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/cryptotracker.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd cryptotracker
+   ```
+3. Install the dependencies:
+   ```sh
+   npm install
+   ```
+4. Start the development server:
+   ```sh
+   npm run dev
+   ```
+
+## Usage
+
+1. Open your browser and navigate to `http://localhost:3000`.
+2. Explore the top 10 cryptocurrencies on the homepage.
+3. Use the search bar to find any cryptocurrency and view its details.
+4. Click on a cryptocurrency to see detailed information and a price chart.
+5. Use the currency conversion feature to convert prices between different currencies.
+
+## Technologies Used
+
+- **ReactJS**
+- **Vite**
+- **CoinGecko API**
+- **react-dom**
+- **react-router-dom**
+- **react-google-chart**
+- **CSS**
 
 ## Contributing
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make your changes.
-4. Commit your changes (`git commit -m 'Add some feature'`).
-5. Push to the branch (`git push origin feature-branch`).
-6. Open a pull request.
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-- **Name**: Gulam Quadir Parwez
-- **Email**: gulamquadir500@gmail.com
-- **GitHub**: [yourusername](https://github.com/gulamquadir500)
+Gulam Quadir Parwez - [gulamquadir500@gmail.com]
 
-Feel free to reach out if you have any questions or suggestions!
+Project Link: [https://github.com/gulamquadir500/CryptoPlace](https://github.com/gulamquadir500/CryptoPlace)
 ```
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
