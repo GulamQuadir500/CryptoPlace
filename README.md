@@ -1,6 +1,4 @@
-Here's a sample `README.md` file for your React web app project. You can customize it further as per your requirements:
 
-```markdown
 # CryptoTracker
 
 CryptoTracker is a web application built with ReactJS and Vite, leveraging the CoinGecko API to provide real-time cryptocurrency data. Users can view the top 10 cryptocurrencies, their current prices, 24-hour changes, and market caps. Additionally, the app offers detailed information, currency conversion, and a responsive design.
