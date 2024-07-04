@@ -13,27 +13,27 @@ const Navbar = () => {
         switch (event.target.value) {
             case "usd": {
                 setCurrency({ name: "usd", symbol: "$" });
-                break
+                break;
             }
             case "eur": {
                 setCurrency({ name: "eur", symbol: "€" });
-                break
+                break;
             }
             case "inr": {
                 setCurrency({ name: "inr", symbol: "₹" });
-                break
+                break;
             }
             default: {
                 setCurrency({ name: "usd", symbol: "$" });
-                break
+                break;
             }
         }
-    }
+    };
 
     return (
         <div className='navbar'>
             <Link to={'/'}>
-                <img src={logo} alt="" className='logo' />
+                <img src={logo} alt="logo" className='logo' />
             </Link>
             <ul>
                 <Link to={'/'}><li>Home</li></Link>
@@ -47,7 +47,7 @@ const Navbar = () => {
                     <option value="eur">EUR</option>
                     <option value="inr">INR</option>
                 </select>
-                <button>Sign up <img src={arrow_icon} alt="" /></button>
+                <button>Sign up <img src={arrow_icon} alt="arrow-icon" /></button>
             </div>
         </div>
     )
