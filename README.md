@@ -3,6 +3,9 @@
 
 CryptoPlace is a React web application built with Vite that allows users to explore and track cryptocurrencies. It provides real-time prices, market data, detailed cryptocurrency information, and more.
 
+## Live Web Link
+https://crypto-place-tan.vercel.app/
+
 ## Features
 
 - **Top 10 Cryptocurrencies**: View the top 10 cryptocurrencies, their current price, 24-hour change, and market cap.
